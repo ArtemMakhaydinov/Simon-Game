@@ -48,10 +48,10 @@ function nextSequence() {
     setTimeout(function () {
         buttonAnimation(randomChosenColor);
         buttonSound(randomChosenColor);
+        document.querySelector("h1").textContent = "Level " + gamePattern.length;
     }, 500);
 
     clickCount = 0;
-    document.querySelector("h1").textContent = "Level " + gamePattern.length;
 };
 
 

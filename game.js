@@ -19,6 +19,12 @@ for (i = 0; i < buttonColors.length; i++) {
             gameplay(this.classList[1])
         };
     });
+    document.querySelectorAll(".btn")[i].addEventListener("touchend", function () {
+        if (gamePattern.length > 0) {
+            clickCount++;
+            gameplay(this.classList[1])
+        };
+    });
 }
 
 

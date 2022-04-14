@@ -9,7 +9,11 @@ document.addEventListener("keydown", function () {
         nextSequence();
     }
 });
-
+document.addEventListener("touchend", function () {
+    if (gamePattern.length === 0) {
+        nextSequence();
+    }
+});
 
 //Button eventlistener
 for (i = 0; i < buttonColors.length; i++) {

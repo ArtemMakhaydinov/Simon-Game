@@ -9,21 +9,10 @@ document.addEventListener("keydown", function () {
         nextSequence();
     }
 });
-document.addEventListener("touchend", function () {
-    if (gamePattern.length === 0) {
-        nextSequence();
-    }
-});
 
 //Button eventlistener
 for (i = 0; i < buttonColors.length; i++) {
     document.querySelectorAll(".btn")[i].addEventListener("click", function () {
-        if (gamePattern.length > 0) {
-            clickCount++;
-            gameplay(this.classList[1])
-        };
-    });
-    document.querySelectorAll(".btn")[i].addEventListener("touchend", function () {
         if (gamePattern.length > 0) {
             clickCount++;
             gameplay(this.classList[1])
